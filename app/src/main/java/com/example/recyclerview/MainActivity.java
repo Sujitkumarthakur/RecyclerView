@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
         arr.add("Suit");
         arr.add("Suit");
         arr.add("Suit");
+        arr.add("Suit");arr.add("Suit");arr.add("Suit");arr.add("Suit");arr.add("Suit");arr.add("Suit");
+        arr.add("Suit");arr.add("Suit");arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
         arr.add("Suit");
         arr.add("Suit");
         arr.add("Suit");
