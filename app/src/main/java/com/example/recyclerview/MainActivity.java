@@ -20,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
+        arr.add("Suit");
 
         //Setup RecyclerView && Adapter:
 
