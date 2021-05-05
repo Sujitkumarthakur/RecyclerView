@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RecyclerView</string>
+    <string name="meaning">This is an Ordering app ! and user would use it to order a cup of coffee !</string>
+    <string name="meaning1">"This is for the second application in ordering application!"</string>
+    <string name="meaning3">Hello friends !</string>
+
+    <color name="black">#FF000000</color>
+
 </resources>

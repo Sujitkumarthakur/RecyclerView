@@ -5,6 +5,16 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+
     <color name="white">#FFFFFFFF</color>
+
+
+    //My added colours!! for practise !!
+
+    <color name="status_stop">#8E8E93</color>
+    <color name="status_running">#4CD964</color>
+    <color name="status_error">#FF3B30</color>
+
+
+
 </resources>

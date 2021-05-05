@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.Viewholder>{
 
-    ArrayList arr;
+    ArrayList<customword> arr;
     Context context;
     public RecyclerViewAdapter(Context context, ArrayList arr) {
         this.context = context;
@@ -34,8 +34,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
+        customword custom= arr.get(position);
 
-        holder.txt1.setText((Integer) arr.get(position));
+        holder.settextname(custom.getText());
+        holder.settextdesc(custom.getText1());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,11 +54,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public class Viewholder  extends RecyclerView.ViewHolder {
         TextView txt1;
-        RelativeLayout parentlayout;
+        TextView txt2;
+        //RelativeLayout parentlayout;
         public Viewholder(@NonNull View itemView) {
             super(itemView);
             txt1= itemView.findViewById(R.id.txt1);
-            parentlayout=itemView.findViewById(R.id.RLayout);
+            txt2= itemView.findViewById(R.id.txt2);
+           // parentlayout=itemView.findViewById(R.id.RLayout);
+        }
+        public void settextname(String name){
+            txt1.setText(name);
+        }
+        public void settextdesc(String desc){
+            txt2.setText(desc);
         }
     }
 }

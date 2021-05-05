@@ -10,7 +10,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-        ArrayList<String> arr=new ArrayList<>();
+        ArrayList<customword> arr=new ArrayList<customword>();
     /* RecyclerView rv; */
 
     @SuppressLint("WrongViewCast")
@@ -19,22 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");arr.add("Suit");arr.add("Suit");arr.add("Suit");arr.add("Suit");arr.add("Suit");
-        arr.add("Suit");arr.add("Suit");arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");
-        arr.add("Suit");arr.add("Suit");
+       arr.add(new customword("Sujit", getString(R.string.meaning)));
+        arr.add(new customword("Sujit", getString(R.string.meaning1)));
+        arr.add(new customword("Sujit", getString(R.string.meaning3)));
+        arr.add(new customword("Sujit", getString(R.string.meaning1)));
 
         //Setup RecyclerView && Adapter:
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.RLayout);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recylerview);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
