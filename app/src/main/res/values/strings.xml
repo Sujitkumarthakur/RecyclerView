@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CardViewRecyclerView</string>
+
+    <string name="Family">Do all yopur family members live together ?</string>
+    <string name="Friends">Do u have many unknown friends ?</string>
+    <string name="Education">Are u well Educated  ?</string>
+    <string name="Relationalship">Do U ever had any relationalship ?</string>
+    <string name="Culture">Have U ever been to Foreign</string>
+</resources>
