@@ -24,7 +24,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @NonNull
     @Override
     public Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.listview, parent,false);
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.listview_item, parent,false);
         Viewholder vh= new Viewholder(v); //pass the view to view holder
         return vh;
 
@@ -50,13 +50,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
 
-    public class Viewholder extends RecyclerView.ViewHolder{
+    public static class Viewholder extends RecyclerView.ViewHolder{
        public TextView txtques;
        public ImageView imageid;
         public Viewholder(@NonNull View itemView) {
             super(itemView);
             txtques=itemView.findViewById(R.id.textques);
             imageid=itemView.findViewById(R.id.imageid);
+            t
 
         }
     }

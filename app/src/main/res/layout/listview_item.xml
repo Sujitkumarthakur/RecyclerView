@@ -34,7 +34,7 @@
                 android:id="@+id/togglebutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Confess !"
+                android:textOn="Confess !"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/purple_200"
                />

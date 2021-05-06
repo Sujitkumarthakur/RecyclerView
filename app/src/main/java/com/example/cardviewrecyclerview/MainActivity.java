@@ -5,17 +5,29 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<Customword> arrlist= new ArrayList<Customword>();
+    ToggleButton togglebutton;
+    Button butt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        togglebutton=(ToggleButton) findViewById(R.id.togglebutton);
+        butt=findViewById(R.id.subbutton);
+
+        String toggle=" ";
+        String  content=" ";
+
 
 
         arrlist.add(new Customword(getString(R.string.Family), R.drawable.ima_1));
@@ -31,5 +43,16 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerViewAdapter rvv= new RecyclerViewAdapter(this,arrlist);
         recyclerView.setAdapter(rvv);
+
+
+        if(togglebutton.isChecked()){
+            toggle= (String) togglebutton.getText().toString();
+        }
+        else
+            toggle = "Not Checked !";
+         content += toggle;
+        Toast.makeText(this,  content, Toast.LENGTH_SHORT).show();
+
+
     }
 }
