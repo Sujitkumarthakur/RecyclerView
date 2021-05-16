@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         togglebutton=(ToggleButton) findViewById(R.id.togglebutton);
         butt=findViewById(R.id.subbutton);
 
-        String toggle=" ";
+       // String toggle=" ";
         String  content=" ";
 
 
@@ -43,15 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerViewAdapter rvv= new RecyclerViewAdapter(this,arrlist);
         recyclerView.setAdapter(rvv);
-
-
-        if(togglebutton.isChecked()){
-            toggle= (String) togglebutton.getText().toString();
-        }
-        else
-            toggle = "Not Checked !";
-         content += toggle;
-        Toast.makeText(this,  content, Toast.LENGTH_SHORT).show();
 
 
     }
